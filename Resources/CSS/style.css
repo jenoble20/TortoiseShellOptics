@@ -218,8 +218,12 @@ footer span{
 
 /*Smartphone Query*/
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 620px){
 
+  body{
+    margin: 0;
+    padding: 0;
+  }
 
   #nav{
     display: none;
@@ -234,6 +238,7 @@ footer span{
 
   .background.image{
     height: 17rem;
+    background-position: 20%;
   }
 
   #slogan{
@@ -242,7 +247,61 @@ footer span{
   }
 
   #slogan h1{
+    font-size: 1rem;
     text-align: center;
-    padding-left: 8rem;
+    padding: 0.2rem 0rem 0.2rem 8rem;
+  }
+
+  #main{
+    margin-top: 5.72rem;
+  }
+
+  #services{
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+
+  #services p{
+    margin-top: 0.5rem;
+    font-size: 0.77rem;
+  }
+
+  #services .fittings,
+  #services .delivery{
+    margin-top: 1.54rem;
+  }
+
+  #info{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.77rem;
+  }
+
+  .column{
+    width: 100%;
+  }
+
+  .title{
+    width: 100%;
+    text-align: center;
+  }
+
+  .column p{
+
+    margin-left: 1rem;
+    font-size: 0.77rem;
+  }
+
+  .appointments.column{
+    margin-top: 4rem;
+  }
+
+  footer img{
+    margin: auto;
+  }
+
+  footer span{
+    display: none;
   }
 }
