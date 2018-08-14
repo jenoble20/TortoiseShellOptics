@@ -213,11 +213,6 @@ footer span{
   #slogan h1{
     font-size: 1.33rem;
   }
-
-
-  #main{
-    margin-top: 21.90rem;
-  }
 }
 
 
@@ -225,9 +220,6 @@ footer span{
 
 @media only screen and (max-width: 700px){
 
-  .site-container{
-    width: 100%;
-  }
 
   #nav{
     display: none;
@@ -238,5 +230,19 @@ footer span{
     align-self: center;
     margin-left: auto;
     margin-right: 1rem;
+  }
+
+  .background.image{
+    height: 17rem;
+  }
+
+  #slogan{
+    margin: 9rem 0rem 0rem 0rem;
+    width: 100%;
+  }
+
+  #slogan h1{
+    text-align: center;
+    padding-left: 8rem;
   }
 }
