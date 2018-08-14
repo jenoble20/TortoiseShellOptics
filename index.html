@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tortoise Shell Optics</title>
     <link href="Resources/CSS/reset.css" type="text/css" rel="stylesheet">
     <link href="Resources/CSS/style.css" type="text/css" rel="stylesheet">
@@ -10,9 +11,11 @@
     <div class="background image">
     </div>
 
+
+    <!--Top site-container that houses the main banner and the header-->
     <div class="site-container">
       <header>
-        <img class="white logo image" src="Resources/Images/logo-white.png">
+        <img src="Resources/Images/logo-white.png">
         <span>Tortoise Shell Optics</span>
         <nav id="nav">
           <ul>
@@ -21,12 +24,20 @@
             <li>Contact</li>
           </ul>
         </nav>
+        <nav id="mobile-nav">
+          <ul>
+            <li>Menu</li>
+          </ul>
+        </nav>
       </header>
 
       <div id="slogan">
         <h1>DON'T JUST LOOK, SEE.</h1>
       </div>
 
+
+      <!--Second site-container positioned below the first, below the main banner.-->
+      <!--This container houses the primary information about the company.-->
       <div id="main" class="site-container">
         <div id="services">
           <div class="exams image">
@@ -42,12 +53,30 @@
             <p>Fast<br> Delivery</p>
           </div>
         </div>
-        <div>
-          <div>
+
+        <div id="info">
+          <div class="column">
+            <div class="title">
+              <h2>Philosophy</h2>
+            </div>
+            <p>Over 75% of our brains are dedicated to one sense: vision.
+            We believe everyone deserves to see the world, no matter what.
+          That's why we offer eye exams, custom fittings, and quick delivery
+        at a low cost. It's your vision that makes ours.</p>
           </div>
-          <div>
+          <div class="column">
+            <div class="title">
+              <h2>Appointments</h2>
+            </div>
+            <p>Schedule an appointment by calling us at (312) 654-0987.
+            We're open Tuesday - Saturday, 9AM - 6pm.</p>
           </div>
         </div>
+
+        <footer>
+          <img src="Resources/Images/logo-black.png">
+          <span>Copyright Tortoiseshell Optics</span>
+        </footer>
       </div>
     </div>
 

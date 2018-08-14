@@ -1,8 +1,6 @@
 html{
   font-family: Helvetica;
   font-size: 18px;
-  line-height: 1.4;
-  background-color: azure;
 }
 
 .background.image{
@@ -42,7 +40,7 @@ header{
   margin-top: 1rem;
 }
 
-.white{
+header img{
   height: 1.5rem;
   padding-left: 2rem;
   padding-right: 1rem;
@@ -68,11 +66,16 @@ li{
   padding: 1rem 1rem;
 }
 
+#mobile-nav{
+  display: none;
+}
+
 
 /*Slogan div*/
 
 #slogan{
   margin-top: 10rem;
+  padding: 1.5rem 5rem;
   align-self: flex-end;
   background-color: white;
   position: relative;
@@ -83,7 +86,6 @@ li{
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.2;
-  margin: 1.5rem 5rem;
 }
 
 
@@ -98,18 +100,143 @@ li{
 
 #services{
   display: flex;
+  justify-content: center;
+  height: 8rem;
   width: 100%;
 }
 
 #services .image{
   display: flex;
   flex-direction: column;
-  padding: 0rem 0rem;
-  margin: 0rem 3rem 0rem 3rem;
+  justify-content: space-between;
+  padding: 0rem 0.75rem;
+  margin: 0rem 2.25rem;
   text-align: center;
 }
 
 #services .image img{
+  margin: 0rem auto;
+}
+
+.exams.image img{
   width: 3.5rem;
-  margin: auto;
+}
+
+.fittings.image img{
+  width: 5rem;
+}
+
+.delivery.image img{
+  width: 5rem;
+}
+
+
+/*Information Section*/
+
+#info{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.title{
+  width: 10rem;
+  background-color: cadetblue;
+  padding: 0.5rem;
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.column{
+  width: 35%;
+  margin-right: 5%;
+  line-height: 1.4;
+}
+
+#info h2{
+  font-weight: bold;
+  color: white;
+}
+
+
+/*Footer Section*/
+
+footer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: azure;
+}
+
+footer img{
+  height: 1.5rem;
+  margin-left: 4rem;
+}
+
+footer span{
+  margin-left: 1rem;
+}
+
+
+/*Media Queries*/
+
+
+/*Tablet Query*/
+
+@media only screen and (max-width: 1200px){
+
+  header{
+    width: 100%;
+    margin-top: 0rem;
+  }
+
+  .site-container{
+    width: 100%;
+  }
+
+  .background.image{
+    height: 22rem;
+  }
+
+  #slogan{
+    margin-top: 5rem;
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    position: static;
+    margin-right: 2rem;
+  }
+
+  #slogan h1{
+    font-size: 1.33rem;
+  }
+
+
+  #main{
+    margin-top: 21.90rem;
+  }
+}
+
+
+/*Smartphone Query*/
+
+@media only screen and (max-width: 700px){
+
+  .site-container{
+    width: 100%;
+  }
+
+  #nav{
+    display: none;
+  }
+
+  #mobile-nav{
+    display: block;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 1rem;
+  }
 }
